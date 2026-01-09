@@ -25,11 +25,17 @@ Console-based UI
 The project follows a layered architecture, ensuring clean separation of concerns:
 
 UI Layer        → MenuUI
+
 Service Layer   → ExpenseTracker
+
 Rule Layer      → ExpenseRuleEngine
+
 DAO Layer       → ExpenseDAO
+
 DB Utility      → DBConnection
+
 Model Layer     → Expense
+
 Database        → MySQL
 
  # Package Structure
@@ -92,10 +98,15 @@ Handles user input and displays expense summaries and totals.
 
 # Database Schema
 CREATE TABLE expenses (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     category VARCHAR(50),
+    
     amount DOUBLE,
+    
     description VARCHAR(255)
+
 );
 
 ▶️ How to Run the Application
@@ -139,5 +150,7 @@ A Java console-based expense tracking application using JDBC and MySQL, designed
 
 # Author
 Shyam Sundar K
+
 Computer Science Engineering Student
+
 Aspiring Full Stack Java Developer
